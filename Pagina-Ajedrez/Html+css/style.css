@@ -1,20 +1,29 @@
 .container__main{
-    display: flex;
+    display: inline-block;
     
     
 }
 
 .container__tablero{
-    align-self: flex-end;
+    
     display: flex;
     flex-wrap: wrap;
-    width: 480px;
-    height: 480px;
+    width: 30rem;
+    height: 30rem;
     border: 25px solid #333333 ;
+    justify-content: center;
     
 
 
 }
+.tablero{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 3rem; 
+    justify-content: center;
+}
+
+
 .casilla__negra{
     
     background-color: #999999 ;
@@ -28,12 +37,14 @@
 }
 
 
-.rotation{
-    animation-duration: rotation 1s;
-    animation-timing-function: rotation ease-out;
+.rotate{
+    animation: rotation ease-out;
+    animation-duration: rotation infinite;
+    
+
 }
 
-@keyframes rotation {
+@keyframes rotation{
     from {
         transform: rotate(0deg);
     }
@@ -42,3 +53,4 @@
     }
     
 }
+
