@@ -1,0 +1,250 @@
+
+@font-face {
+    font-family: 'Oswald';
+    src: url(Oswald-ExtraLight.ttf)
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+}
+
+nav{
+    height: 80px;
+    background: #ffffff;
+}
+
+nav img{
+    width: 100px;
+    /*position: absolute;*/
+    top: 17px;
+    left: 12%;
+}
+
+nav ul{
+    float: right;
+    margin-right: 25px;
+}
+
+nav ul li{
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 15px;
+}
+
+nav ul li a{
+    position: relative;
+    color: #1b1c20;
+    font-size: 18px;
+    text-transform: uppercase;
+}
+
+
+
+nav ul li a:before{
+    position: absolute;
+    content: '';
+    left: 0;
+    bottom: 0;
+    height: 3px;
+    width: 100%;
+    background: #1b1c20;
+    transform: scaleX(0);
+    transform-origin: right;
+}
+
+label #btn,
+label #cancel{
+    color: #1b1c20;
+    font-size: 30px;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+}
+
+#check{
+    display: none;
+}
+
+
+body {
+    font-family: 'Oswald', sans-serif;
+    background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url(fondo-formulario.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    /*margin: 0;*/
+    /*padding: 10px 20px;*/
+    box-sizing: border-box;
+    margin-top: 20pxs;
+
+}
+
+h2{
+    color: white;
+    text-align: center;
+    margin: 0;
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+form{
+    width: 450px;
+    margin: auto;
+    padding: 10px 20px;
+    box-sizing: border-box;
+    margin-top: 20px;
+}
+
+input, textarea{
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 7px;
+    box-sizing: border-box;
+    font-size: 17px;
+    border: none;
+}
+
+textarea {
+    min-height: 100px;
+    max-height: 200px;
+    max-width: 100%;
+}
+
+#boton{
+    background: #F4F4F4;
+    padding: 10px;
+}
+
+#boton:hover {
+     cursor: pointer;
+}
+
+p {
+    color: white;
+}
+
+.RadioUno{
+    color: white;
+}
+
+.RadioDos{
+    color: white;
+}
+
+.RadioTres{
+    color: white;
+}
+
+.checkboxs{
+    color: white;
+    text-align: center;
+}
+
+p {
+    text-align: center ;
+}
+
+label {
+    color: white;
+    text-align: center;
+}
+
+input {
+    border-radius: 7px;
+}
+
+textarea {
+    border-radius: 7px;
+}
+
+select {
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 7px;
+    box-sizing: border-box;
+    font-size: 17px;
+    border-radius: 7px;
+
+}
+
+@media (max-width: 480px){
+    form{
+        width: 100%;
+    }
+    
+    label #btn{
+        display:block;
+    }
+}
+
+@media (max-width: 481px){
+    form{
+        width: 100%;
+    }
+
+    label #btn{
+        display:block;
+    }
+    ul{
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background: #ffffff;
+        top: 80px;
+        left: 0;
+        text-align: center; 
+    }
+
+    nav ul li{
+        display: block;
+        margin: 50px 0;
+        line-height: 30px;
+
+    }
+    
+}
+
+@media (max-width: 1024px){
+    form{
+        width: 100%;
+    }
+    
+}
+
+@media (max-width: 1025px){
+    form{
+        width: 100%;
+    }
+
+    nav img{
+        left: 6%;
+        top: 20px;
+        width: 100px;
+    }
+
+    nav ul li a{
+        font-size: 17px;
+    }
+    
+}
+
+@media (max-width: 1440px){
+    form{
+        width: 100%;
+    }
+    
+    nav img{
+
+        left: 8%;
+        width: 100px;
+    }
+    
+}
+
+
