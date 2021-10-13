@@ -26,21 +26,18 @@
     width: 12.5%;
     height: 12.5%;
 }
-.container__checkbox{
-    display: inline-block;
-    margin: 2rem;
-}
 
-.rotate{
+
+.rotation{
     animation-duration: rotation 1s;
     animation-timing-function: rotation ease-out;
 }
 
-@keyframes rotation{
-    from{
+@keyframes rotation {
+    from {
         transform: rotate(0deg);
     }
-    to{
+    to {
         transform: rotate(180deg);
     }
     
