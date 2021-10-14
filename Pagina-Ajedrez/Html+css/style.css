@@ -36,21 +36,31 @@
     height: 12.5%;
 }
 
-
-.rotate{
-    animation: rotation ease-out;
-    animation-duration: rotation infinite;
-    
-
-}
-
 @keyframes rotation{
     from {
-        transform: rotate(0deg);
+        transform: rotateZ(0deg)
     }
     to {
-        transform: rotate(180deg);
+        transform: rotateZ(180deg);
     }
     
 }
+.container__checkbox{
+    transform: scale(1.5);
+    margin: 10px;
 
+}
+
+.container__checkbox:checked~.tablero{
+    animation: rotation ease-out;
+    animation-duration:  1s;
+    animation-fill-mode: forwards;
+    
+}
+
+.container__checkbox:checked~.tablero .container__tablero .container__casilla{
+    animation: rotation ease-out;
+    animation-duration:  1s;
+    animation-fill-mode: forwards;
+}
+  
