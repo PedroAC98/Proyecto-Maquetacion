@@ -1,3 +1,8 @@
+@font-face {
+    font-family: 'Oswald';
+    src: url(../Font/Oswald-VariableFont_wght.ttf);
+}
+
 .container__main{
     display: inline-block;
     
@@ -64,3 +69,6 @@
     animation-fill-mode: forwards;
 }
   
+.fuente{
+    font-family: 'Oswald', sans-serif;
+}
